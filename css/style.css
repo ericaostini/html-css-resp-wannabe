@@ -133,9 +133,40 @@ img {
     .container{
         max-width: 750px;
         margin: 0 auto;
+        padding: 0 20px;
     }
     .lessons .col {
         width: calc(100%/2);
     }
     
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 1.2rem;
+    }
+    .container{
+        max-width: 480px;
+    }
+    .lessons .col, .steps .col{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .card .text{
+        padding: 20px;
+        text-align: center
+    }
+    .why-us .row{
+        display: inline-block;
+    }
+    .why-us .col-left, .why-us .col-right{
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+    .col-right h3{
+        margin-top: 2rem;
+    }
 }
