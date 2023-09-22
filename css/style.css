@@ -128,15 +128,21 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
  /* media query */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:1200px) and (min-width:769px) {
+    .steps, .site-header{
+        width: 1200px;
+    }
+}
+@media screen and (max-width: 768px){
     .container{
-        max-width: 750px;
-        margin: 0 auto;
+        max-width: 768px;
         padding: 0 20px;
     }
     .lessons .col {
         width: calc(100%/2);
+    }
+    .steps, .site-header{
+        width: 768px;
     }
     
 }
@@ -150,6 +156,9 @@ img {
     .lessons .col, .steps .col{
         width: 100%;
         margin-bottom: 3rem;
+    }
+    .steps, .site-header{
+        width: 480px;
     }
     .row{
         flex-wrap: wrap;
